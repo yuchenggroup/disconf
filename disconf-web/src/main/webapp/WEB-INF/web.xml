@@ -77,7 +77,7 @@
 
     <mime-mapping>
         <extension>json</extension>
-        <mime-type>application/json</mime-type>
+        <mime-type>text/html</mime-type>
     </mime-mapping>
 
 
