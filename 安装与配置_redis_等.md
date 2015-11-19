@@ -141,16 +141,25 @@ mysql 密码
 
 其实这里没必要麻烦,直接将 war 包拷贝到 tomcat 的 `webapps` 目录下,成为 ROOT.war 更方便，记得把原来的 ROOT 重命名。
 
+> **说明**: 如果是简单搭建使用环境,可以直接命名为 ROOT；但根据程序和数据分离的原则, 发布的应用app不应该放到 tomcat 安装目录下。
+
 
 -- 安装 nginx
 
-
-	sudo rpm -ivh http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0.el6.ngx.noarch.rpm
-	
 	sudo yum install -y nginx
 	yum info nginx
+
+或者这样: 
+
+
+
+	sudo rpm -ivh http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0.el6.ngx.noarch.rpm
+
+启动服务:	
 	
 	service nginx start
+
+
 
 可以参考这里: [https://github.com/cncounter/translation/blob/master/tiemao_2015/15_Nginx/nginx.md](https://github.com/cncounter/translation/blob/master/tiemao_2015/15_Nginx/nginx.md)
 
